@@ -1,9 +1,36 @@
 module.exports = class Lista {
+    
+    #elementos;
+
+    constructor() {
+        this.#elementos = [];
+    }
+
+    find_clave(clave) {
+        for(var i = 0; i < this.#elementos.length; i++) {
+            if(this.#elementos[i].clave == clave) {
+                return i;
+            }
+        }
+        return NaN;
+    }
+    
     count() {
-        return 0;
+        return this.#elementos.length;
     }
 
     find(clave) {
-        return NaN;
+        var index = this.find_clave(clave);
+        if(isNaN(index)) {
+            return index;
+        }
+        else {
+            return this.#elementos[index].valor;
+        }
+    }
+
+    add(clave, valor) {
+        var count = this.#elementos.push({clave, valor});
+        return count;
     }
 }
