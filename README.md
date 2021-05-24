@@ -31,7 +31,6 @@ Además de la funcionalidad implementada se evaluarán los siguientes aspectos d
 
 - Consistencia en los identificadores utilizados para los métodos y atributos de las clases.
 - Facilidad en la lectura del código respetando una adecuada indentación y separación con líneas en blanco de los diferentes bloques de código.
-- Uso de las cadenas de texto de los bloques "describe" e "it" de los códigos de prueba para describir en forma clara el caso de prueba y el aspecto a verificar.
 - Documentación mediante comentarios en el código fuente y en los archivos de pruebas.
 
 ---
