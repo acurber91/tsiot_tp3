@@ -31,7 +31,13 @@ module.exports = class Lista {
 
     add(clave, valor) {
         if(typeof clave === "string" && typeof valor === "string") {
-            this.#elementos.push({clave, valor});
+            var index = this.find_clave(clave);
+            if(isNaN(index)) {
+                this.#elementos.push({clave, valor});
+            }
+            else {
+                this.#elementos[index].valor = valor;
+            }
         }
         else {
             return NaN;
