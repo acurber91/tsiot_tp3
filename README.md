@@ -43,16 +43,16 @@ Por otro lado, dentro de la carpeta `features` se implementan todas las funciona
 
 El resultado que se obtuvo en la consola es el siguiente:
 
-agustin@laptop:~$ npm test
+    agustin@laptop:~$ npm test
 
-> tp3@1.0.0 test /home/agustin/MIoT/TSIoT/tp3
-> cucumber-js --publish-quiet
+    > tp3@1.0.0 test /home/agustin/MIoT/TSIoT/tp3
+    > cucumber-js --publish-quiet
 
-......................
+    ......................
 
-6 scenarios (6 passed)
-22 steps (22 passed)
-0m00.018s (executing steps: 0m00.006s)
+    6 scenarios (6 passed)
+    22 steps (22 passed)
+    0m00.018s (executing steps: 0m00.006s)
 
 ---
 
