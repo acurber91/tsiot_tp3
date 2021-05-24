@@ -51,18 +51,3 @@ Then("si busco la clave {int}, obtengo el valor NaN.", function(clave) {
 });
 
 /*********************/
-
-/*** Escenario Nº3 ***/
-/*
-When("se agrega la clave {} con el valor {},", function(clave, valor) {
-    contexto.lista.add(clave, valor);
-});
-
-Then("la lista tiene {int} elementos almacenados.", function(cantidad) {
-    expect(contexto.lista.count()).to.be.equal(cantidad);
-});
-
-Then("si busco la clave {}, obtengo el valor {}.", function(clave, valor) {
-    expect(contexto.lista.find(clave)).to.be.equal(valor);
-});*/
-/*********************/
