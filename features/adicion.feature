@@ -1,7 +1,7 @@
 # language: es
 # encoding: utf-8
 
-Característica: Gestionar las parejas almacenadas en la lista.
+Característica: Adición de elementos a una lista.
 
 Antecedentes:
     Dado una lista vacía.
