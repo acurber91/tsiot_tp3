@@ -20,3 +20,15 @@ Then("si se busca la clave {string}, obtengo el valor {string} actualizado.", fu
 });
 
 /*********************/
+
+/*** Escenario Nº5 ***/
+
+Then("si se elimina la clave {string},", function(clave) {
+    expect(contexto.lista.delete(clave)).to.be.true;
+});
+
+Then("si se busca la clave {string}, obtengo el valor NaN.", function(clave) {
+    expect(contexto.lista.find(clave)).to.be.NaN;
+});
+
+/*********************/

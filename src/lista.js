@@ -43,4 +43,16 @@ module.exports = class Lista {
             return NaN;
         }
     }
+
+    delete(clave)
+    {
+        var index = this.find_clave(clave);
+        if(isNaN(index)) {
+            return index
+        }
+        else {
+            this.#elementos.splice(index, 1);
+            return true
+        }
+    }
 }
