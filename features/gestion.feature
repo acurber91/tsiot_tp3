@@ -14,3 +14,8 @@ Escenario: Agregar un elemento a una lista vacía.
     Cuando agrego la clave "clave" con el valor "valor",
     Entonces la lista tiene 1 elemento almacenado,
     Y si busco la clave "clave", obtengo el valor "valor".
+
+Escenario: Agregar un elemento numérico a una lista vacía.
+    Cuando agrego la clave 1 con el valor 2,
+    Entonces la lista no tiene elementos almacenados,
+    Y si busco la clave 1, obtengo el valor NaN.

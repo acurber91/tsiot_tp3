@@ -30,7 +30,11 @@ module.exports = class Lista {
     }
 
     add(clave, valor) {
-        var count = this.#elementos.push({clave, valor});
-        return count;
+        if(typeof clave === "string" && typeof valor === "string") {
+            this.#elementos.push({clave, valor});
+        }
+        else {
+            return NaN;
+        }
     }
 }
