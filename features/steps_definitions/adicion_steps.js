@@ -1,5 +1,15 @@
+/* 
+ * Testing de Sistemas de Internet de las Cosas
+ * Carrera de Especialización en Internet de las Cosas (CEIoT)
+ * 
+ * El siguiente programa cumple con los requisitos del Trabajo Práctico Nº3.
+ * 
+ * Autor: Esp. Ing. Agustín Curcio Berardi
+*/
+
 const { Before, Given, When, Then } = require("@cucumber/cucumber")
 const expect = require("chai").expect;
+const assert = require("chai").assert;
 const Lista = require("../../src/lista.js");
 
 let contexto = {};
