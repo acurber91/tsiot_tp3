@@ -51,16 +51,10 @@ module.exports = class Lista {
             else {
                 this.#elementos[index].valor = valor;
             }
-            this.sort();
         }
         else {
             return NaN;
         }
-    }
-
-    // Ordena alfabéticamente las claves del vector.
-    sort() {
-        this.#elementos.sort((a, b) => a.clave.localeCompare(b.clave))
     }
 
     // Elimina un conjunto {clave, valor} a partir de una clave.
@@ -77,8 +71,13 @@ module.exports = class Lista {
     }
 
     // Devuelve todos los elementos del vector.
-    find_all() {
-        return this.#elementos;
+    find_all()
+    {
+        var listado = [];
+        var claves = this.#elementos;
+        for(var i = 0; i < claves.length; i++) {
+            listado[i] = claves[i].clave;
+        }
+        return listado.sort();
     }
-    
 }

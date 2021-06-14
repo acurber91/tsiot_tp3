@@ -1,10 +1,13 @@
+
 # language: es
 # encoding: utf-8
 
 Característica: Consulta de información de la lista.
 
+Antecedentes:
+    Dado una lista con el par clave "edificio" y valor "casa".
+
 Escenario: Consulta de todos los valores.
-    Dado una lista con la clave "edificio" y valor "casa",
-    Cuando se se le agrega la clave "animal" y valor "perro",
-    Entonces se podrá obtiene el arreglo completo y ordenado alfabéticamente.
-    Y la cantidad total de elementos igual a 2.
+    Cuando se le agrega la clave "animal" y valor "perro",
+    Entonces se obtiene el siguiente resultado:
+    | animal | edificio |

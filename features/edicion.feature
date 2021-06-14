@@ -1,3 +1,4 @@
+
 # language: es
 # encoding: utf-8
 
@@ -11,6 +12,5 @@ Escenario: Actualizar un elemento existente a la lista.
     Entonces si se busca la clave "clave", obtengo el valor "nuevo_valor" actualizado.
 
 Escenario: Borrar un elemento de la lista.
-    Cuando se agrega la clave "letras" con el valor "abcdef",
-    Entonces si se elimina la clave "clave",
-    Y si se busca la clave "clave", obtengo el valor NaN.
+    Cuando se elimina la clave "clave",
+    Entonces si se busca la clave "clave" se obtiene NaN.
